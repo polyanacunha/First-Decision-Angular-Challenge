@@ -10,7 +10,38 @@ export class UserService {
   private users: User[] = [
     { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
     { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
-    // Add more users as required
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
+    { name: 'André Souza', status: 'Ativo', creationDate: new Date('2020-10-10'), lastAccess: new Date('2020-10-20 13:00') },
+    { name: 'Maria Luíza', status: 'Pendente', creationDate: new Date('2020-10-10'), lastAccess: null },
   ];
 
   constructor() { }
@@ -19,5 +50,4 @@ export class UserService {
     return of(this.users);
   }
 
-  // Add methods for filtering and searching as needed
 }

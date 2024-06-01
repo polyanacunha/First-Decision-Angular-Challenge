@@ -1,0 +1,16 @@
+.main-container {
+    display: flex;
+    height: 100%; /* Ajuste a altura conforme necessário */
+  }
+  
+  app-sidebar {
+    flex: 0 50 50px; /* Largura da sidebar fixa em 250px */
+    height: 100%; /* Ocupa toda a altura do container */
+    color: black;
+  }
+  
+  app-users-list {
+    flex: 1;
+    height: 100%; 
+  }
+  

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ConfirmCloseDialogComponent } from 'src/app/confirm-close-dialog/confirm-close-dialog.component';
 
 interface Profile {
@@ -30,7 +30,7 @@ export class AddUserDialogComponent implements OnInit {
   selectedCountryCode = 'BR';
   phoneNumber = '';
 
-  constructor(private fb: FormBuilder, private snackBar: MatSnackBar, private dialog: MatDialog) {}
+  constructor(private fb: FormBuilder, private snackBar: MatSnackBar, private dialog: MatDialog, private dialogRef: MatDialogRef<AddUserDialogComponent>) {}
 
   ngOnInit(): void {
     this.userForm = this.fb.group({
@@ -61,5 +61,11 @@ export class AddUserDialogComponent implements OnInit {
   closeDialog(): void {
     const dialogRef = this.dialog.open(ConfirmCloseDialogComponent, {
       width: '250px'      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        if (result) {
+          this.dialogRef.close();
+        }
+      });
   }
 }

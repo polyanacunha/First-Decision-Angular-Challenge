@@ -26,12 +26,13 @@
             </div>
             <div class="dialog-phone-and-email">
                 <div class="dialog-telepone-field">
-                    <mat-label>Telefone - Opcional</mat-label>
+                    <mat-label>Telefone 
+                        <span>- Opcional</span></mat-label>
                     <div class="select-input-phone">
                         <div class="dialog-phone-select">
                         <mat-form-field>
                         <mat-select [(value)]="selectedCountryCode"  formControlName="country">
-                            <mat-select-trigger>
+                            <mat-select-trigger class="flag-icon-select">
                                 <span class="flag-icon"
                                 [ngClass]="'flag-icon-' + selectedCountryCode.toLowerCase()"></span>
                             </mat-select-trigger>

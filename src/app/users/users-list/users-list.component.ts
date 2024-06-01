@@ -1,15 +1,17 @@
 import { Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
-import { UserService } from '../services/user.service';
-import { User } from '../models/user.model';
+import { UserService } from '../../services/user.service';
+import { User } from '../../models/user.model';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatDialog } from '@angular/material/dialog';
+import { AddUserDialogComponent } from '../add-user-dialog/add-user-dialog.component';
 
 @Component({
-  selector: 'app-users',
-  templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+  selector: 'app-users-list',
+  templateUrl: './users-list.component.html',
+  styleUrls: ['./users-list.component.scss']
 })
-export class UsersComponent implements OnInit {
+export class UsersListComponent implements OnInit {
   users: User[] = [];
   filteredUsers: User[] = [];
   searchText = '';
@@ -17,7 +19,7 @@ export class UsersComponent implements OnInit {
   dataSource: MatTableDataSource<User> = new MatTableDataSource<User>();
   @ViewChild(MatPaginator) paginator: MatPaginator | null = null;
   
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, public dialog: MatDialog) { }
 
   ngOnInit() {
     this.userService.getUsers().subscribe(users => {
@@ -45,5 +47,11 @@ export class UsersComponent implements OnInit {
   onStatusFilterChange(value: string) {
     this.filterStatus = value;
     this.applyFilter();
+  }
+  openAddUserDialog(): void {
+    const dialogRef = this.dialog.open(AddUserDialogComponent, {
+      width: '750px',
+      height: '570px'
+    });
   }
 }

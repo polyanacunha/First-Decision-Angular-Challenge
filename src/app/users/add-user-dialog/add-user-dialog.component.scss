@@ -1,0 +1,173 @@
+.telefone-field {
+    cursor: pointer;
+}
+
+#dialog-subtitle {
+    margin-left: 20px;
+    color: #8c8c94;
+}
+
+
+.dialog-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-name-and-surname {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.dialog-phone-and-email {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.dialog-name-field,
+.dialog-telepone-field,
+.dialog-surname-field,
+.dialog-email-name {
+    display: flex;
+    flex-direction: column;
+}
+
+mat-form-field {
+    width: 160%;
+}
+
+#input {
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    box-shadow: none;
+    border: solid 2px #b7b7c2;
+}
+
+.dialog-profile-access {
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: solid 1px #b7b7c2;
+    width: 690px;
+}
+
+.dialog-idiom-select {
+    border: solid 1px #b7b7c2;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px 15px 0px 15px
+}
+
+.dialog-contact {
+    width: 40%;
+}
+
+.dialog-idiom {
+    width: 300px;
+}
+
+.dialog-idiom-and-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dialog-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.phone-field select,
+.phone-field input {
+    height: 40px;
+    padding: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+.phone-field select {
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    padding-right: 35px;
+}
+
+.flag-icon {
+    margin-right: 10px;
+}
+
+.select-input-phone {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px#8c8c94;
+    border-radius: 5px;
+    padding: 2px 2px;
+    height: 59px;
+    width: 330px;
+}
+
+.dialog-phone-select {
+    width: 50px;
+    padding: 0px 0px;
+    height: 35px;
+    border: none;
+}
+
+#dialog-input-phone {
+    margin-left: 35px;
+    height: 35px;
+    border: none;
+}
+
+.dialog-phone-select mat-form-field {
+    height: 65px;
+}
+
+.dialog-email-name input {
+    margin-left: 20px;
+    width: 160px;
+}
+
+.dialog-email-name {
+    width: 215px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.dialog-access {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-access {
+    margin-top: 20px;
+}
+
+mat-radio-button {
+    margin-right: 45px;
+    color: #5047ED;
+}
+
+mat-radio-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.send-invite-button {
+    background-color: #5047ED;
+    color: white;
+    cursor: pointer;
+    width: 360px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.close-dialog-button {
+    background-color: white;
+    color: #5047ED;
+    width: 360px;
+    height: 45px;
+}
